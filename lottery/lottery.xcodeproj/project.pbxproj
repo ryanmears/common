@@ -10,6 +10,7 @@
 		C65C29591495BD4700740484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65C29581495BD4700740484 /* Foundation.framework */; };
 		C65C295C1495BD4700740484 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C65C295B1495BD4700740484 /* main.m */; };
 		C65C29601495BD4700740484 /* lottery.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C65C295F1495BD4700740484 /* lottery.1 */; };
+		C6B1440714A0438B00F2F57F /* LotteryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B1440614A0438B00F2F57F /* LotteryEntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		C65C295B1495BD4700740484 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C65C295E1495BD4700740484 /* lottery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lottery-Prefix.pch"; sourceTree = "<group>"; };
 		C65C295F1495BD4700740484 /* lottery.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = lottery.1; sourceTree = "<group>"; };
+		C6B1440514A0438B00F2F57F /* LotteryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryEntry.h; sourceTree = "<group>"; };
+		C6B1440614A0438B00F2F57F /* LotteryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LotteryEntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				C65C295B1495BD4700740484 /* main.m */,
+				C6B1440514A0438B00F2F57F /* LotteryEntry.h */,
+				C6B1440614A0438B00F2F57F /* LotteryEntry.m */,
 				C65C295F1495BD4700740484 /* lottery.1 */,
 				C65C295D1495BD4700740484 /* Supporting Files */,
 			);
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C65C295C1495BD4700740484 /* main.m in Sources */,
+				C6B1440714A0438B00F2F57F /* LotteryEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +202,7 @@
 		C65C29641495BD4700740484 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lottery/lottery-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -205,6 +212,7 @@
 		C65C29651495BD4700740484 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lottery/lottery-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -230,6 +238,7 @@
 				C65C29651495BD4700740484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
