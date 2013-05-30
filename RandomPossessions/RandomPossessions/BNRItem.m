@@ -51,6 +51,27 @@
     return descriptionString;
 }
 
+-(void)setContainedItem: (BNRItem *)i
+{
+    containedItem = i;
+    [i setContainer:self];
+}
+
+-(BNRItem *)containedItem
+{
+    return containedItem;
+}
+
+-(void)setContainer:(BNRItem *)i
+{
+    container = i;
+}
+
+-(BNRItem *)container
+{
+    return container;
+}
+
 -(id)init
 {
     return [self initWithItemName:@"item" valueInDollars:0 serialNumber:@""];
@@ -111,6 +132,11 @@
 -(NSDate *)dateCreated
 {
     return dateCreated;
+}
+
+-(void)dealloc
+{
+    NSLog(@"Destroyed: %@", self);
 }
 
 @end

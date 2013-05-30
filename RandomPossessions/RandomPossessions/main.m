@@ -15,22 +15,19 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        NSMutableArray *items = [[NSMutableArray alloc] init];
+        BNRItem *backpack = [[BNRItem alloc] init];
+        [backpack setItemName:@"Backpack"];
         
-        for (int i = 0; i < 10; i++) {
-            BNRItem *p = [BNRItem randomItem];
-            [items addObject:p];
-        }
+        BNRItem *calculator = [[BNRItem alloc] init];
+        [calculator setItemName:@"Calculator"];
         
-        for (BNRItem *item in items) {
-            NSLog(@"%@", item);
-        }
-
-        items = nil;
+        [backpack setContainedItem:calculator];
+      
+        backpack = nil;
         
-        BNRContainer *myContainer = [[BNRContainer alloc] init];
+        NSLog(@"Container: %@", [calculator container]);
         
-        NSLog(@"Whazbedis? %@", [myContainer description]);
+        calculator = nil;
     }
     return 0;
 }
