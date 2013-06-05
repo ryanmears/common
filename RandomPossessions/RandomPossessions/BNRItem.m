@@ -39,6 +39,8 @@
     return newItem;
 }
 
+@synthesize itemName, containedItem, container, serialNumber, valueInDollars, dateCreated;
+
 -(NSString *)description
 {
     NSString *descriptionString =
@@ -49,27 +51,6 @@
             dateCreated];
     
     return descriptionString;
-}
-
--(void)setContainedItem: (BNRItem *)i
-{
-    containedItem = i;
-    [i setContainer:self];
-}
-
--(BNRItem *)containedItem
-{
-    return containedItem;
-}
-
--(void)setContainer:(BNRItem *)i
-{
-    container = i;
-}
-
--(BNRItem *)container
-{
-    return container;
 }
 
 -(id)init
@@ -99,39 +80,10 @@
     return [self initWithItemName:name valueInDollars:0 serialNumber:sNumber];
 }
 
--(void)setItemName:(NSString *)str
+-(void)setContainedItem:(BNRItem *)i
 {
-    itemName = str;
-}
-
--(NSString *)itemName
-{
-    return itemName;
-}
-
--(void)setSerialNumber:(NSString *)str
-{
-    serialNumber = str;
-}
-
--(NSString *)serialNumber
-{
-    return serialNumber;
-}
-
--(void)setValueInDollars:(int)i
-{
-    valueInDollars = i;
-}
-
--(int)valueInDollars
-{
-    return valueInDollars;
-}
-
--(NSDate *)dateCreated
-{
-    return dateCreated;
+    containedItem = i;
+    [i setContainer:self];
 }
 
 -(void)dealloc
