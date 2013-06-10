@@ -32,7 +32,6 @@
 
 -(void)viewDidLoad
 {
-    [worldView setMapType:MKMapTypeSatellite];
     [worldView setShowsUserLocation:YES];
 }
 
@@ -88,6 +87,28 @@
     [activityIndicator stopAnimating];
     [locationTitleField setHidden:NO];
     [locationManager stopUpdatingLocation];
+}
+
+-(IBAction)mapTypeSelect:(id)sender
+{
+    int clickedSegment = [sender selectedSegmentIndex];
+    
+    switch (clickedSegment) {
+        case 0:
+            [worldView setMapType:MKMapTypeStandard];
+            break;
+            
+        case 1:
+            [worldView setMapType:MKMapTypeSatellite];
+            break;
+            
+        case 2:
+            [worldView setMapType:MKMapTypeHybrid];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 //MapView Delegate Methods

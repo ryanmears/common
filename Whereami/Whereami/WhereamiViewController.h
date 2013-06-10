@@ -13,10 +13,12 @@
 @interface WhereamiViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate>
 {
     CLLocationManager *locationManager;
+    NSArray *mapTypes;
     
     IBOutlet MKMapView *worldView;
     IBOutlet UIActivityIndicatorView *activityIndicator;
     IBOutlet UITextField *locationTitleField;
+    
 }
 
 -(void)findLocation;
