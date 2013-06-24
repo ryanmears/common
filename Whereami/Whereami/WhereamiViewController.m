@@ -24,6 +24,7 @@
         //And we want it to be as accurate as possible
         //regardless of how much time/power it takes
         [locationManager setDesiredAccuracy:kCLLocationAccuracyBest];
+        [locationManager setDistanceFilter:50];
         
     }
     
