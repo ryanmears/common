@@ -10,6 +10,28 @@
 
 @implementation HypnosisView
 
+@synthesize circleColor;
+
+-(void)setCircleColor:(UIColor *)clr
+{
+    circleColor = clr;
+    [self setNeedsDisplay];
+}
+
+-(BOOL)canBecomeFirstResponder
+{
+    return YES;
+}
+
+//Send to the first responder when the user starts shakin' the device
+-(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake) {
+        NSLog(@"Shake - motion: %d, event: %@", motion, event);
+        [self setCircleColor:[UIColor redColor]];        
+    }
+}
+
 -(void)drawRect:(CGRect)dirtyRect
 {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
@@ -29,7 +51,7 @@
     CGContextSetLineWidth(ctx, 10);
     
     //The color of the line should be gray (red/green/blue = 0.6, alpha = 1.0);
-    [[UIColor redColor] setStroke];
+    [[self circleColor] setStroke];
 
     for (float currentRadius = maxRadius; currentRadius > 0; currentRadius -= 20) {
         //add a path to the context
@@ -72,6 +94,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
+        [self setCircleColor:[UIColor lightGrayColor]];
     }
     return self;
 }
