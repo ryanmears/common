@@ -20,16 +20,21 @@
     
     //Create the UIScrollView to have the size of the window, matching its size
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
+    [scrollView setPagingEnabled:YES];
     [[self window] addSubview:scrollView];
 
     //Create the HypnosisView with a frame that is twice the size of the screen
     CGRect bigRect = screenRect;
     bigRect.size.width *= 2.0;
-    bigRect.size.height *= 2.0;
-    HypnosisView *view = [[HypnosisView alloc] initWithFrame:bigRect];
+    HypnosisView *view = [[HypnosisView alloc] initWithFrame:screenRect];
 
     //Add the HypnosisView as a subview of the scrollView instead of the window
     [scrollView addSubview:view];
+    
+    //Move the rectangle for the other HypnosisView to the right, just off the screen
+    screenRect.origin.x = screenRect.size.width;
+    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:screenRect];
+    [scrollView addSubview:anotherView];
     
     //Tell the scrollView how big its virtual world is
     [scrollView setContentSize:bigRect.size];
