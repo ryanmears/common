@@ -42,8 +42,6 @@
     center.x = bounds.origin.x + bounds.size.width / 2.0;
     center.y = bounds.origin.y + bounds.size.height / 2.0;
     
-    NSLog(@"center: x %f, y %f", center.x, center.y);
-    
     //The radius of the circle should be nearly as big as the view
     float maxRadius = hypot(bounds.size.width, bounds.size.height) / 2.0;
     
@@ -61,7 +59,7 @@
         CGContextStrokePath(ctx);
     }
     
-    NSString *text = @"Ch' gettin' sleepy dawg";
+    NSString *text = @"Lorem Ipsum";
     UIFont *font = [UIFont boldSystemFontOfSize:28];
     CGRect textRect;
     
