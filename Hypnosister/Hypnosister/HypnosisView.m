@@ -52,8 +52,22 @@
     [[self circleColor] setStroke];
 
     for (float currentRadius = maxRadius; currentRadius > 0; currentRadius -= 20) {
+      
+        float red, green, blue, alpha;
+        [circleColor getRed:&red green:&green blue:&blue alpha:&alpha];
+
+        NSLog(@"inital - red: %g green: %g blue: %g alpha: %g", red, green, blue, alpha);
+        
+        //NSLog(@"colors: %g, %g, %g, %g", red, green, blue, alpha);
+        red = red += 0.1;
+        green = green += 0.1;
+        red = red += 0.1;
+        
+        [self setCircleColor:[UIColor colorWithRed:red green:green blue:blue alpha:alpha]];
+        
         //add a path to the context
         CGContextAddArc(ctx, center.x, center.y, currentRadius, 0.0, M_PI * 2.0, YES);
+        [[self circleColor] setStroke];
         
         //perform drawing operation
         CGContextStrokePath(ctx);
@@ -92,7 +106,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setBackgroundColor:[UIColor clearColor]];
-        [self setCircleColor:[UIColor lightGrayColor]];
+        [self setCircleColor: [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1.0]];
     }
     return self;
 }
