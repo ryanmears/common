@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48A0AB79-8E90-4723-85BA-ADD38E3ACA75</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hypnosister</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>01BFDE21-C79F-4797-942F-E5CBC4637939</key>
+		<string>https://github.com/ryanmears/git_Skunkworks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hypnosister/Hypnosister.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>01BFDE21-C79F-4797-942F-E5CBC4637939</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ryanmears/git_Skunkworks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>01BFDE21-C79F-4797-942F-E5CBC4637939</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>01BFDE21-C79F-4797-942F-E5CBC4637939</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GitHub</string>
+		</dict>
+	</array>
+</dict>
+</plist>
