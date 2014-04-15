@@ -28,7 +28,15 @@
     imageGallery.backgroundColor = [UIColor blueColor];
     [[self view] addSubview:imageGallery];
     
-    UIImage *testImage = [[UIImage alloc] initWithContentsOfFile:@"/cloudsea.jpg"];
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"cloudsea" ofType:@"jpg"];
+    NSLog(@"filepath: %@", filePath);
+    NSString* filePath2 = [[NSBundle mainBundle] pathForResource:@"Cloud Sea" ofType:@"jpg"];
+    NSLog(@"filepath2: %@", filePath2);
+    NSString* filePath3 = [[NSBundle mainBundle] pathForResource:@"Bogus" ofType:@"jpg"];
+    NSLog(@"filepath3: %@", filePath3);
+    
+    UIImage *testImage = [UIImage alloc];
+    [testImage initWithContentsOfFile:@"/cloudsea.jpg"];
     
     NSLog(@"testImage: %@", testImage);
     
