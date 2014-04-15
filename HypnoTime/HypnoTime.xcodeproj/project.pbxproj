@@ -21,6 +21,8 @@
 		C640222F18B46E1E00F03857 /* HypnoTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C640222E18B46E1E00F03857 /* HypnoTimeTests.m */; };
 		C640223A18B46EB900F03857 /* HypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C640223918B46EB900F03857 /* HypnosisViewController.m */; };
 		C640223D18B46F3400F03857 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = C640223C18B46F3400F03857 /* HypnosisView.m */; };
+		C653193118C40BAD003BCDE7 /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C653193018C40BAD003BCDE7 /* DummyViewController.m */; };
+		C653193418C40EE0003BCDE7 /* DummyView.m in Sources */ = {isa = PBXBuildFile; fileRef = C653193318C40EE0003BCDE7 /* DummyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		C640223918B46EB900F03857 /* HypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisViewController.m; sourceTree = "<group>"; };
 		C640223B18B46F3400F03857 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
 		C640223C18B46F3400F03857 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
+		C653192F18C40BAD003BCDE7 /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyViewController.h; path = HypnoTime/DummyViewController.h; sourceTree = "<group>"; };
+		C653193018C40BAD003BCDE7 /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummyViewController.m; path = HypnoTime/DummyViewController.m; sourceTree = "<group>"; };
+		C653193218C40EE0003BCDE7 /* DummyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyView.h; path = HypnoTime/DummyView.h; sourceTree = "<group>"; };
+		C653193318C40EE0003BCDE7 /* DummyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DummyView.m; path = HypnoTime/DummyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 		C64021FD18B46E1E00F03857 = {
 			isa = PBXGroup;
 			children = (
+				C653192F18C40BAD003BCDE7 /* DummyViewController.h */,
+				C653193018C40BAD003BCDE7 /* DummyViewController.m */,
+				C653193218C40EE0003BCDE7 /* DummyView.h */,
+				C653193318C40EE0003BCDE7 /* DummyView.m */,
 				C640220F18B46E1E00F03857 /* HypnoTime */,
 				C640222818B46E1E00F03857 /* HypnoTimeTests */,
 				C640220818B46E1E00F03857 /* Frameworks */,
@@ -250,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C653193118C40BAD003BCDE7 /* DummyViewController.m in Sources */,
+				C653193418C40EE0003BCDE7 /* DummyView.m in Sources */,
 				C640223A18B46EB900F03857 /* HypnosisViewController.m in Sources */,
 				C640223D18B46F3400F03857 /* HypnosisView.m in Sources */,
 				C640221618B46E1E00F03857 /* main.m in Sources */,
@@ -454,6 +466,7 @@
 				C640223418B46E1E00F03857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C640223518B46E1E00F03857 /* Build configuration list for PBXNativeTarget "HypnoTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +475,7 @@
 				C640223718B46E1E00F03857 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,35 +1,24 @@
 //
-//  HypnoAppDelegate.m
-//  HypnoTime
+//  IGBAppDelegate.m
+//  ImageGalleryBasic
 //
-//  Created by Ryan Mears on 2/18/14.
+//  Created by Ryan Mears on 4/14/14.
 //  Copyright (c) 2014 Ryan Mears. All rights reserved.
 //
 
-#import "HypnoAppDelegate.h"
-#import "HypnosisViewController.h"
-#import "DummyViewController.h"
+#import "IGBAppDelegate.h"
 
-@implementation HypnoAppDelegate
+@implementation IGBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
- 
-//    HypnosisViewController *hvc = [[HypnosisViewController alloc] init];
-//    
-//    [[self window] setRootViewController:hvc];
     
-    //Here thar be dragons
-    DummyViewController *dvc = [[DummyViewController alloc] init];
-    [[self window] setRootViewController:dvc];
+    NSLog(@"didFinishLaunchingWithOptions");
     
-    self.window.backgroundColor = [UIColor blueColor];
-    [self.window makeKeyAndVisible];
     return YES;
 }
-
+							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
