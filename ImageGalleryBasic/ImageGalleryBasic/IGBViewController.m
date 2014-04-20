@@ -19,33 +19,32 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"viewDidLoad");
+    NSLog(@"self.view bounds: %@", NSStringFromCGRect([self.view bounds]));
     
+    //Debug colors to identify view hierarchy
     self.view.backgroundColor = [UIColor greenColor];
     
     UIScrollView *imageGallery = [[UIScrollView alloc] init];
     imageGallery.frame = [[self view] bounds];
-    imageGallery.backgroundColor = [UIColor blueColor];
+    imageGallery.contentSize = CGSizeMake(640, 536);
+    imageGallery.pagingEnabled = YES;
     [[self view] addSubview:imageGallery];
     
-    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"cloudsea" ofType:@"jpg"];
-    NSLog(@"filepath: %@", filePath);
-    NSString* filePath2 = [[NSBundle mainBundle] pathForResource:@"Cloud Sea" ofType:@"jpg"];
-    NSLog(@"filepath2: %@", filePath2);
-    NSString* filePath3 = [[NSBundle mainBundle] pathForResource:@"Bogus" ofType:@"jpg"];
-    NSLog(@"filepath3: %@", filePath3);
-    
-    UIImage *testImage = [UIImage alloc];
-    [testImage initWithContentsOfFile:@"/cloudsea.jpg"];
-    
-    NSLog(@"testImage: %@", testImage);
-    
+    UIImage *testImage = [UIImage imageNamed:@"Cloud Sea.jpg"];
+    UIImage *testImage2 = [UIImage imageNamed:@"cronkite.jpg"];
+
     UIImageView *testImageView = [[UIImageView alloc] initWithImage:testImage];
     testImageView.frame = [self.view bounds];
-    testImageView.backgroundColor = [UIColor redColor];
     [imageGallery addSubview:testImageView];
+
+    UIImageView *testImageView2 = [[UIImageView alloc] initWithImage:testImage2];
+    testImageView2.frame = CGRectMake(320, 0, 320, 568);
+    [imageGallery addSubview:testImageView2];
     
-    NSLog(@"[self.view bounds]: %@", NSStringFromCGRect([self.view bounds]));
+    //Debug colors to identify view hierarchy
+    self.view.backgroundColor = [UIColor greenColor];
+    imageGallery.backgroundColor = [UIColor blueColor];
+
 }
 
 - (void)didReceiveMemoryWarning

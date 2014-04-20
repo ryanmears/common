@@ -21,8 +21,8 @@
 		C653AE4418FCD77D009D494E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C653AE2618FCD77D009D494E /* UIKit.framework */; };
 		C653AE4C18FCD77D009D494E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C653AE4A18FCD77D009D494E /* InfoPlist.strings */; };
 		C653AE4E18FCD77D009D494E /* ImageGalleryBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C653AE4D18FCD77D009D494E /* ImageGalleryBasicTests.m */; };
+		C6A6DCC61903427300B7E931 /* cronkite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6A6DCC51903427300B7E931 /* cronkite.jpg */; };
 		C6F7E6BA18FCE15400AD3B90 /* Cloud Sea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6F7E6B918FCE15400AD3B90 /* Cloud Sea.jpg */; };
-		C6F7E6BC18FCE1EE00AD3B90 /* cloudsea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6F7E6BB18FCE1EE00AD3B90 /* cloudsea.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		C653AE4918FCD77D009D494E /* ImageGalleryBasicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageGalleryBasicTests-Info.plist"; sourceTree = "<group>"; };
 		C653AE4B18FCD77D009D494E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C653AE4D18FCD77D009D494E /* ImageGalleryBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryBasicTests.m; sourceTree = "<group>"; };
+		C6A6DCC51903427300B7E931 /* cronkite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cronkite.jpg; sourceTree = "<group>"; };
 		C6F7E6B918FCE15400AD3B90 /* Cloud Sea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cloud Sea.jpg"; sourceTree = "<group>"; };
-		C6F7E6BB18FCE1EE00AD3B90 /* cloudsea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloudsea.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,6 @@
 		C653AE2818FCD77D009D494E /* ImageGalleryBasic */ = {
 			isa = PBXGroup;
 			children = (
-				C6F7E6BB18FCE1EE00AD3B90 /* cloudsea.jpg */,
 				C6F7E6B818FCE15400AD3B90 /* images */,
 				C653AE3118FCD77D009D494E /* IGBAppDelegate.h */,
 				C653AE3218FCD77D009D494E /* IGBAppDelegate.m */,
@@ -161,6 +160,7 @@
 		C6F7E6B818FCE15400AD3B90 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C6A6DCC51903427300B7E931 /* cronkite.jpg */,
 				C6F7E6B918FCE15400AD3B90 /* Cloud Sea.jpg */,
 			);
 			path = images;
@@ -214,6 +214,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Ryan Mears";
 				TargetAttributes = {
+					C653AE1E18FCD77D009D494E = {
+						DevelopmentTeam = B4YV4BV6SP;
+					};
 					C653AE3F18FCD77D009D494E = {
 						TestTargetID = C653AE1E18FCD77D009D494E;
 					};
@@ -245,8 +248,8 @@
 			files = (
 				C6F7E6BA18FCE15400AD3B90 /* Cloud Sea.jpg in Resources */,
 				C653AE3B18FCD77D009D494E /* Images.xcassets in Resources */,
+				C6A6DCC61903427300B7E931 /* cronkite.jpg in Resources */,
 				C653AE2D18FCD77D009D494E /* InfoPlist.strings in Resources */,
-				C6F7E6BC18FCE1EE00AD3B90 /* cloudsea.jpg in Resources */,
 				C653AE3618FCD77D009D494E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,10 +396,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageGalleryBasic/ImageGalleryBasic-Prefix.pch";
 				INFOPLIST_FILE = "ImageGalleryBasic/ImageGalleryBasic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,10 +412,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageGalleryBasic/ImageGalleryBasic-Prefix.pch";
 				INFOPLIST_FILE = "ImageGalleryBasic/ImageGalleryBasic-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
