@@ -22,6 +22,7 @@
 		C653AE4C18FCD77D009D494E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C653AE4A18FCD77D009D494E /* InfoPlist.strings */; };
 		C653AE4E18FCD77D009D494E /* ImageGalleryBasicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C653AE4D18FCD77D009D494E /* ImageGalleryBasicTests.m */; };
 		C6A6DCC61903427300B7E931 /* cronkite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6A6DCC51903427300B7E931 /* cronkite.jpg */; };
+		C6A6DCC81906206800B7E931 /* gull.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6A6DCC71906206800B7E931 /* gull.jpg */; };
 		C6F7E6BA18FCE15400AD3B90 /* Cloud Sea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C6F7E6B918FCE15400AD3B90 /* Cloud Sea.jpg */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		C653AE4B18FCD77D009D494E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C653AE4D18FCD77D009D494E /* ImageGalleryBasicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryBasicTests.m; sourceTree = "<group>"; };
 		C6A6DCC51903427300B7E931 /* cronkite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cronkite.jpg; sourceTree = "<group>"; };
+		C6A6DCC71906206800B7E931 /* gull.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gull.jpg; sourceTree = "<group>"; };
 		C6F7E6B918FCE15400AD3B90 /* Cloud Sea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cloud Sea.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +164,7 @@
 			children = (
 				C6A6DCC51903427300B7E931 /* cronkite.jpg */,
 				C6F7E6B918FCE15400AD3B90 /* Cloud Sea.jpg */,
+				C6A6DCC71906206800B7E931 /* gull.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F7E6BA18FCE15400AD3B90 /* Cloud Sea.jpg in Resources */,
+				C6A6DCC81906206800B7E931 /* gull.jpg in Resources */,
 				C653AE3B18FCD77D009D494E /* Images.xcassets in Resources */,
 				C6A6DCC61903427300B7E931 /* cronkite.jpg in Resources */,
 				C653AE2D18FCD77D009D494E /* InfoPlist.strings in Resources */,
