@@ -1,0 +1,22 @@
+@import 'reset';
+
+$blue: lightblue;
+$pink: lightpink;
+
+@mixin rounded-box {
+  width:200px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+body {
+  padding:50px;
+  border-top: 12px solid $blue;
+}
+
+li {
+  p {
+    background: $pink;
+    @include rounded-box;
+  }
+}
