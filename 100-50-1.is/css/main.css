@@ -1,0 +1,807 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color:#504f48;
+}
+
+body {
+    font-size:1em;
+    line-height:1.4;
+}
+
+::-moz-selection {
+    background:#b3d4fc;
+    text-shadow:none;
+}
+
+::selection {
+    background:#b3d4fc;
+    text-shadow:none;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0;
+}
+
+img {
+    vertical-align:middle;
+}
+
+fieldset {
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+textarea {
+    resize:vertical;
+}
+
+.chromeframe {
+    margin:0.2em 0;
+    background:#ccc;
+    color:#000;
+    padding:0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author:Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font:18px/24px FaktPro-Blond, Helvetica, Helvetica Neue, Arial;
+}
+
+h1, h2, h3, b {
+    font-family:FaktPro-SemiBold, Helvetica, Helvetica Neue, Arial;
+    font-weight:normal;
+}
+
+
+/* ==============
+    MOBILE:Menu
+   ============== */
+
+nav {
+    display:none;
+}
+
+
+/* ==============
+    MOBILE:Main
+   ============== */
+
+.main {
+
+}
+
+
+
+/* ===============
+    ALL:IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top:20px;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body, .footer-container {
+    border-top:4px solid #ff2f07;
+}
+
+body {
+    background-color:#fafafa;
+
+}
+
+/* allow the nav to sit above the #about section */
+.header-container {
+    position: relative;
+    z-index:1;
+}
+.main-container {
+    position: relative;
+    z-index:0;
+}
+
+header {
+    position:relative;
+}
+
+header p {
+    position:absolute;
+    top:0;
+    left:0;
+    width:60%;
+    padding:0 20%;
+    text-align:center;
+    font-size:15px;
+    line-height:18px;
+    color:#91908b;
+}
+header p a {
+    color:#91908b;
+    font-variant:small-caps;
+    letter-spacing:1px;
+}
+
+h1.title {
+    position:relative;
+    left:-3px;
+    width:300px;
+    height:90px;
+    margin:66px auto 0;
+    background:url(../img/logo-100-50-1.svg) no-repeat;
+    text-indent:-999em;
+    background-size:100%;
+}
+
+.main article {
+    position:relative;
+    margin-bottom:60px;
+}
+
+.main section {
+    padding:0 10px;
+}
+
+.main article a {
+    display:inline-block;
+    line-height:.95;
+    color:#ff3008;
+    font-family:FaktPro-SemiBold, Helvetica, Helvetica Neue, Arial;
+    text-decoration:none;
+    border-bottom:1px solid;
+}
+    .main article#photographers a,
+    .main article#venue a {
+        color:#fff;
+    }
+
+.main article a:hover {
+    opacity:1;
+}
+
+.main article:before {
+    content:'';
+    position:absolute;
+    bottom:-30px;
+    height:1px;
+    width:100%;
+    background-color:#efefef;
+}
+.main article:after {
+    content:'+';
+    font-family:FaktPro-SemiBold, Helvetica, Helvetica Neue, Arial;
+    font-size:24px;
+    line-height:21px;
+    height:24px;
+    width:18px;
+    color:#d3d2cb;
+    position:absolute;
+    left:50%;
+    margin-left:-9px;
+    bottom:-42px;
+    text-align:center;
+}
+
+.main article#contact:before,
+.main article#contact:after {
+    display:none;
+}
+
+.main article h1 {
+    font-size:2em;
+}
+
+#photographers ul {
+    margin:0 0 0 -14px;
+    padding:0;
+    width:100%;
+    list-style:none;
+    float:left;
+
+    -moz-column-count:1;
+    -moz-column-gap:10px;
+    -webkit-column-count:1;
+    -webkit-column-gap:10px;
+}
+    #photographers ul li {
+        position: relative;
+        padding-left:14px;
+    }
+        #photographers ul a {
+            display:inline-block;
+            padding:6px 0 0;
+            line-height:16px;
+            text-decoration:none;
+            border-bottom:1px solid transparent;
+        }
+        #photographers ul a:visited {
+            color:inherit;
+        }
+        #photographers ul a:hover {
+            border-color:#fff;
+        }
+        #photographers ul a:hover:before {
+            content:'+';
+            position: absolute;
+            display:inline-block;
+            width:14px;
+            margin-left:-14px;
+            color:#fff;
+        }
+
+h2 {
+    font-size:30px;
+    color:#ff2f07;
+}
+    h2 span {
+        font-family:FaktPro-Blond, Helvetica, Helvetica Neue, Arial;
+    }
+    #about h2 {
+        display:none;
+    }
+    #photographers h2,
+    #venue h2 {
+        color:#fff;
+    }
+        #venue h2,
+        #opening h2,
+        #photowalk h2 {
+            line-height:1;
+        }
+    #contact section:last-child h2,
+    #contact section:last-child a {
+        color:inherit;
+    }
+#about p:first-of-type {
+    font-size:24px;
+    line-height:30px;
+}
+
+.photographers-container {
+    background:#ff2f07 url(../img/filmstrip.jpg) repeat-x 50% 4px;
+    color:#fff;
+}
+#photographers {
+    padding:60px 0 30px;
+}
+
+.venue-container {
+    background-color:#63635f;
+    color:#fff;
+}
+#venue {
+    padding:15px 0;
+}
+
+/*Galleries ===================================================================*/
+@media (min-device-width: 415px) {
+  .gallery .fotorama {
+    width: 612px;
+    margin: 0 auto;
+  }
+}
+
+#sponsors ul {
+    list-style:none;
+    padding:0;
+}
+    #sponsors ul li {
+        width:100%;
+    }
+
+#sponsors ul li a {
+    width:100%;
+    height:100px;
+    padding-bottom:20px;
+    text-indent:-999em;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30% auto;
+    border-bottom:2px solid #ededed;
+}
+    #sponsors ul li:last-child a {
+        border:none;
+    }
+        .vsco a {
+            background-image:url(../img/logo-vsco.svg);
+        }
+        .inkifi a {
+            background-image:url(../img/logo-inkifi.svg);
+        }
+        .artifactuprising a {
+            background-image:url(../img/logo-artifactuprising.svg);
+        }
+        .ona a {
+            background-image:url(../img/logo-ona.svg);
+        }
+        .snapwire a {
+            background-image:url(../img/logo-snapwire.svg);
+        }
+        .boon a {
+            background-image:url(../img/logo-boon.svg);
+        }
+        .collectivegood a {
+            background-image:url(../img/logo-collectivegood.svg);
+        }
+
+#contact section {
+    margin-bottom:40px;
+}
+
+.footer-container {
+    background-color:#91908b;
+    color:#fff;
+    font-size:15px;
+    line-height:21px;
+}
+.footer-container footer {
+    padding:20px 10px;
+}
+footer br {
+    margin-bottom:18px;
+}
+footer a,
+footer a:visited {
+    color:#fff;
+    font-family:FaktPro-SemiBold, Helvetica, Helvetica Neue, Arial;
+}
+
+
+
+
+
+/* ==========================================================================
+   Browser/bug testing styles
+   ========================================================================== */
+
+/*article {
+    box-shadow:0 0 0 1px rgba(0,0,0,.4);
+}
+section {
+    background-color: rgba(0,0,0,.2);
+}*/
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width:480px) {
+
+/* ====================
+    INTERMEDIATE:Menu
+   ==================== */
+
+    nav a {
+
+    }
+
+    nav li:first-child a {
+
+    }
+
+    nav li:last-child a {
+
+    }
+
+/* ====================
+    INTERMEDIATE:Main
+   ==================== */
+
+    h1.title {
+        width:420px;
+        height:130px;
+        margin:60px auto 0;
+    }
+
+    #photographers ul {
+        -moz-column-count:2;
+        -moz-column-gap:10px;
+        -webkit-column-count:2;
+        -webkit-column-gap:10px;
+    }
+
+    #opening {
+        background:url(../img/logo-bbm.svg) no-repeat 97% top;
+        background-size: 280px auto;
+    }
+        #opening section {
+            padding-right:300px;
+        }
+
+    #ourcharity {
+        background:url(../img/logo-100cameras.svg) no-repeat 97% top;
+    }
+        #ourcharity section {
+            padding-right:210px;
+        }
+
+
+/* ========================
+    INTERMEDIATE:IE Fixes
+   ======================== */
+
+    /*nav ul li {
+        display:inline;
+    }*/
+
+    .oldie nav a {
+        margin:0 0.7%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+/* ====================
+    WIDE:CSS3 Effects
+   ==================== */
+
+
+
+/* ============
+    WIDE:Menu
+   ============ */
+
+    nav {
+        position:absolute;
+        width:190px;
+        left:20px;
+        top:234px;
+        display:block;
+        margin-top:-163px;
+        padding-top:163px;
+        background:url(../img/logo-nwblk-partner.svg) no-repeat;
+        background-size:55% auto;
+    }
+
+    nav ul {
+        margin:0;
+        padding:0;
+        font-family:FaktPro-SemiBold, Helvetica, Helvetica Neue, Arial;
+    }
+
+    nav a {
+        position:relative;
+        display:inline-block;
+        margin-bottom:5px;
+        padding:5px 0 0;
+        font-size:15px;
+        line-height:15px;
+        text-decoration:none;
+        color:#9a9995;
+        border-bottom:2px solid transparent;
+    }
+
+    nav a:visited {
+        color:#9a9995;
+    }
+
+    nav a:hover {
+        color:#ff3008;
+        border-color:#e0dfde;
+    }
+    nav a:hover:before {
+        content:'+';
+        position:absolute;
+        left:-12px;
+        color:#c7c6bf;
+    }
+
+/* ============
+    WIDE:Main
+   ============ */
+
+    header,
+    article,
+    footer {
+
+    }
+
+    .main section {
+        padding:0 20px;
+    }
+
+    h1.title {
+        width:489px;
+        height:145px;
+        margin-top:60px;
+        margin-left:230px;
+        background:url(../img/logo-100-50-1.svg) no-repeat;
+        text-indent:-999em;
+    }
+
+    header p {
+        top:0;
+        left:230px;
+        width:auto;
+        padding:0;
+    }
+
+    #about section {
+        margin-left:230px;
+        padding:0;
+    }
+
+    #photographers ul {
+        -moz-column-count:3;
+        -moz-column-gap:10px;
+        -webkit-column-count:3;
+        -webkit-column-gap:10px;
+    }
+
+    #venue {
+        padding:0;
+        background:url(../img/logo-nwblk.svg) no-repeat;
+    }
+
+    #venue section {
+        padding:15px 0 30px 430px;
+    }
+
+    #sponsors ul li,
+    #sponsors ul li a {
+        float:left;
+    }
+    #sponsors ul li {
+        width:auto;
+        margin-right:20px;
+    }
+        #sponsors ul li:last-child {
+            margin-right:0;
+        }
+    #sponsors ul li a {
+        position:relative;
+        border:none;
+        padding-right:20px;
+        background-position: 0 50%;
+        background-size: 85% auto;
+    }
+        #sponsors ul li a:after {
+            content:'';
+            position:absolute;
+            right:-1px;
+            top:50%;
+            margin-top:-20px;
+            width:2px;
+            height:40px;
+            background-color:#ededed;
+        }
+            #sponsors ul li:last-child a:after {
+                display:none;
+            }
+            #sponsors .vsco a {
+                width:174px;
+            }
+            #sponsors .inkifi a {
+                width:190px;
+            }
+            #sponsors .artifactuprising a {
+                width:150px;
+            }
+            #sponsors .ona a {
+                width:150px;
+            }
+            #sponsors .snapwire a {
+                width:150px;
+            }
+            #sponsors .boon a {
+                width:150px;
+            }
+            #sponsors .collectivegood a {
+                width:190px;
+            }
+
+    #contact section {
+        float:left;
+        width:44%;
+    }
+        #contact section:last-child {
+            float:right;
+        }
+
+    footer br {
+        margin-bottom:0;
+    }
+}
+
+@media only screen and (min-width:980px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    header,
+    article,
+    footer {
+        max-width:940px; /* 1000px - 60px/10% for margins */
+        margin:0 auto;
+    }
+
+    nav {
+        left:0px;
+    }
+
+    .main section {
+        padding:0;
+    }
+
+    .main article:before {
+        margin-left:-30px;
+        width:1000px;
+    }
+
+    #photographers ul {
+        -moz-column-count:4;
+        -moz-column-gap:10px;
+        -webkit-column-count:4;
+        -webkit-column-gap:10px;
+    }
+
+    #ourcharity {
+        background-position:right top;
+    }
+
+    #sponsors ul li {
+        margin-right:30px;
+    }
+        #sponsors ul li a {
+            padding-right:30px;
+        }
+
+    #contact section {
+        width:49%;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color:transparent;
+    border:0;
+    overflow:hidden;
+    *text-indent:-9999px;
+}
+
+.ir:before {
+    content:"";
+    display:block;
+    width:0;
+    height:150%;
+}
+
+.hidden {
+    display:none !important;
+    visibility:hidden;
+}
+
+.visuallyhidden {
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip:auto;
+    height:auto;
+    margin:0;
+    overflow:visible;
+    position:static;
+    width:auto;
+}
+
+.invisible {
+    visibility:hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content:" ";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background:transparent !important;
+        color:#000 !important; /* Black prints faster:h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow:none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration:underline;
+    }
+
+    a[href]:after {
+        content:" (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content:" (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content:"";
+    }
+
+    pre,
+    blockquote {
+        border:1px solid #999;
+        page-break-inside:avoid;
+    }
+
+    thead {
+        display:table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside:avoid;
+    }
+
+    img {
+        max-width:100% !important;
+    }
+
+    @page {
+        margin:0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans:3;
+        widows:3;
+    }
+
+    h2,
+    h3 {
+        page-break-after:avoid;
+    }
+}
