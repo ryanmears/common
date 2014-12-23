@@ -278,11 +278,12 @@ h2 {
 }
 
 .photographers-container {
-    background:#ff2f07 url(../img/filmstrip.jpg) repeat-x 50% 4px;
+    /*background:#ff2f07 url(../img/filmstrip.jpg) repeat-x 50% 4px;*/
+    background: #ff2f07;
     color:#fff;
 }
 #photographers {
-    padding:60px 0 30px;
+    padding:0 0 30px;
 }
 
 .venue-container {
